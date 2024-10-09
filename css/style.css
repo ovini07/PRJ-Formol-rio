@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+fieldset {
+    width: 100%;
+    max-width: 700px; /* Limita o tamanho máximo do formulário */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.radio-label-group,
+.checkbox-label-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espaço entre os grupos */
+}
+
+.radio-label-group input[type="radio"],
+.checkbox-label-group input[type="checkbox"] {
+    margin-right: 10px; /* Espaço entre o botão e o texto */
+}
+
+.radio-label-group label,
+.checkbox-label-group label {
+    display: flex;
+    align-items: center; /* Alinhamento vertical */
+    gap: 5px; /* Espaço entre o botão e o texto */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.instructions {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    font-size: 0.85em;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend><b>Cadastro de DEVS</b></legend>
+    
+        <form action="/pagina-processa-dados-form" method="post">
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" required>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input id="sobrenome" type="text" required>
+
+            <label for="telefone">Telefone:</label>
+            <input id="telefone" type="tel" placeholder="(XX)XXXXX-XXXX" required>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="email@gmail.com" required>
+
+            <label>Em qual lado da aplicação você desenvolve?</label>
+            <label>
+                <input type="radio" id="frontend" name="lado" value="Front-End" required>
+                Front-End
+            </label>
+            <label>
+                <input type="radio" id="backend" name="lado" value="Back-End" required>
+                Back-End
+            </label>
+            <label>
+                <input type="radio" id="fullstack" name="lado" value="Full-Stack" required>
+                Full-Stack
+            </label>
+
+            <label for="experiencia">Nível de Experiência:</label>
+            <select id="experiencia" required>
+                <option value="">Selecione</option>
+                <option value="Junior">Junior</option>
+                <option value="Pleno">Pleno</option>
+                <option value="Senior">Senior</option>
+            </select>
+
+            <label>Selecione quais tecnologias você trabalha:</label>
+            <label>
+                <input type="checkbox" id="html" name="tecnologia" value="Html">
+                Html
+            </label>
+            <label>
+                <input type="checkbox" id="css" name="tecnologia" value="CSS">
+                CSS
+            </label>
+            <label>
+                <input type="checkbox" id="java" name="tecnologia" value="Java">
+                Java
+            </label>
+            <label>
+                <input type="checkbox" id="javascript" name="tecnologia" value="JavaScript">
+                JavaScript
+            </label>
+            <label>
+                <input type="checkbox" id="bd" name="tecnologia" value="Banco de Dados">
+                Banco de Dados
+            </label>
+            <label>
+                <input type="checkbox" id="php" name="tecnologia" value="PHP">
+                PHP
+            </label>
+            <label>
+                <input type="checkbox" id="python" name="tecnologia" value="Python">
+                Python
+            </label>
+    
+            <label for="experiencia_texto">Conte um pouco da sua experiência:</label>
+            <textarea id="experiencia_texto" rows="4"></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+</body>
+</html>
